@@ -1,4 +1,4 @@
-# ☁️ Desafio AWS: Gerenciamento de Instâncias EC2 (Bootcamp GFT / DIO)
+# Desafio AWS: Gerenciamento de Instâncias EC2 (Bootcamp GFT / DIO)
 
 Este repositório foi criado para documentar meu primeiro laboratório prático no ecossistema da AWS, focado no provisionamento e gerenciamento de uma instância **Amazon EC2**. 
 
@@ -6,7 +6,7 @@ Estudar a teoria da nuvem é uma coisa, mas abrir o console e subir uma infraest
 
 ---
 
-## 🚀 O Passo a Passo da Implementação
+## O Passo a Passo da Implementação
 
 ### 1. O Painel Inicial
 Tudo começou na estaca zero, com o dashboard do EC2 limpo, pronto para receber a primeira máquina virtual.
@@ -40,7 +40,7 @@ Instância provisionada com sucesso! O console confirmou o status como **Running
 
 ---
 
-## 🧠 Insights e Aprendizados
+## Insights e Aprendizados
 
 * **O Poder do Isolamento:** Ver como o Security Group funciona como um firewall dedicado direto na instância me fez entender na prática o conceito de segurança na nuvem. Se a porta SSH não estivesse aberta ali, a máquina estaria completamente blindada contra acessos externos.
 * **Aventuras via SSH:** Com o arquivo `.pem` baixado e o IP público em mãos, fui um pouco além do básico do laboratório e me aventurei a conectar no terminal da máquina via **SSH**. Ver a resposta do servidor Linux remoto aceitando a conexão direto da minha máquina local foi de longe a melhor parte da experiência. 
