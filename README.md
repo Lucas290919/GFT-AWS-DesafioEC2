@@ -11,32 +11,32 @@ Estudar a teoria da nuvem é uma coisa, mas abrir o console e subir uma infraest
 ### 1. O Painel Inicial
 Tudo começou na estaca zero, com o dashboard do EC2 limpo, pronto para receber a primeira máquina virtual.
 
-![Painel EC2 Limpo](images/Screenshot%20from%202026-06-28%2021-27-54.png)
+![Painel EC2 Limpo](images/imagem1.png)
 
 ### 2. Configurações Básicas da Instância
 Para esse desafio, batizei a máquina de `DesafioGFT` e selecionei uma AMI do **Ubuntu Server 24.04 LTS** (arquitetura x86 de 64 bits), aproveitando os recursos elegíveis para a camada gratuita (*Free Tier*). O tamanho escolhido foi a clássica instância `t3.micro`.
 
-![Definição de Nome e AMI](images/Screenshot%20from%202026-06-28%2021-29-30.png)
+![Definição de Nome e AMI](images/imagem2.png)
 
 ### 3. Segurança e Autenticação (Par de Chaves)
 Para garantir que o acesso ao servidor seja totalmente protegido, criei um par de chaves RSA chamado `MaquinaGFT`, gerando o arquivo privado `.pem`. Sem essa chave, ninguém entra no servidor.
 
-![Criação do Par de Chaves](images/Screenshot%20from%202026-06-28%2021-31-14.png)
+![Criação do Par de Chaves](images/imagem3.png)
 
 ### 4. Arquitetura de Rede e Firewall (Security Groups)
 Aqui foi onde a lógica de infraestrutura ficou interessante. Configurei as definições de rede dentro da VPC padrão e criei um novo **Security Group** personalizado. A regra de ouro foi habilitar o tráfego SSH vindo de qualquer lugar (porta 22) para que a máquina ficasse acessível remotamente. Além disso, configurei o armazenamento padrão com um volume raiz de 8 GiB do tipo gp3.
 
-![Configurações de Rede e Disco](images/Screenshot%20from%202026-06-28%2021-32-09.png)
+![Configurações de Rede e Disco](images/imagem4.png)
 
 ### 5. Revisão Geral do Setup
 Antes de dar o "start", uma última checada no resumo dos recursos que seriam criados para garantir que tudo estava dentro do planejado.
 
-![Resumo da Instância](images/Screenshot%20from%202026-06-28%2021-32-41.png)
+![Resumo da Instância](images/imagem5.png)
 
 ### 6. Máquina Online e Pronta pro Combate
 Instância provisionada com sucesso! O console confirmou o status como **Running** (Executando) e gerou o IP público correspondente.
 
-![Instância Executando com Sucesso](images/Screenshot%20from%202026-06-28%2021-35-18.png)
+![Instância Executando com Sucesso](images/imagem6.png)
 
 ---
 
